@@ -1,0 +1,172 @@
+/* ============================= */
+/*  BASE SETTINGS  */
+/* ============================= */
+body {
+  font-size: 16px;
+}
+
+/* ============================= */
+/*  HEADER & NAVIGATION  */
+/* ============================= */
+.header-row {
+  padding: 0 2rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  position: static;
+  width: auto;
+  height: auto;
+  background: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+/* ============================= */
+/*  ABOUT HERO SECTION  */
+/* ============================= */
+.about-hero {
+  padding: 5rem 2rem 4rem;
+}
+
+.about-title {
+  font-size: 2.75rem;
+}
+
+.about-sub {
+  font-size: 1.2rem;
+}
+
+/* ============================= */
+/*  ABOUT SECTION  */
+/* ============================= */
+.about-section {
+  padding: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.about-card,
+.mission-card,
+.vision-card {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem; 
+}
+
+.about-section h2 {
+  font-size: 1.4rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+}
+
+.about-section:last-of-type {
+  margin-bottom: 1rem;
+  padding-bottom: 0;
+}
+
+/* ================== */
+/*  HOW SECTION  */
+/* ================== */
+.how-section {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ================= */
+/*  TABLE SECTION  */
+/* ================== */
+  .timeline-table th,
+  .timeline-table td {
+    font-size: 0.85rem;
+    padding: 0.7rem;
+  }
+
+/* ================== */
+/*  VALUES SECTION  */
+/* ================== */
+
+.values-section {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.values-section h2 {
+  font-size: 1.8rem;
+}
+
+.values-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; 
+}
+
+.value-item {
+  width: 30%;
+}
+
+.icon-circle.small {
+  width: 60px;
+  height: 60px;
+}
+
+.value-label {
+  font-size: 1rem;
+}
+
+/* ============================= */
+/*  ERA SECTION (TIMELINE / HISTORY)  */
+/* ============================= */
+.era-card {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.era-content h2 {
+  font-size: 1.2rem;
+}
+
+.era-content p {
+  font-size: 0.95rem;
+}
+
+/* ============================= */
+/*  TABS SECTION  */
+/* ============================= */
+.tab-labels {
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.tab {
+  font-size: 0.95rem;
+  padding: 0.6rem 1.2rem;
+}
+
+/* ============================= */
+/*  HERO DECORATION (LINE OR BORDER)  */
+/* ============================= */
+.hero::after {
+  height: 6px; 
+}
+
+/* ============================= */
+/*  FOOTER SECTION  */
+/* ============================= */
+footer {
+  margin-top: 1.5rem;
+  padding: 2rem 1.5rem;
+}
+
+

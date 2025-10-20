@@ -1,0 +1,332 @@
+/* ---------------------------------------------------------
+    ROOT VARIABLES
+   Define color palette and global constants
+--------------------------------------------------------- */
+:root {
+    --navy-dark: #0D1B2A;
+    --navy: #1B263B;
+    --gold: #FFD700;
+    --white: #FFFFFF;
+    --muted: #F5F5F5;
+    --accent-cyan: #00B7C2;
+    --green-accent: #4e7d64;
+}
+
+/* ---------------------------------------------------------
+    GLOBAL RESETS & BASE STYLES
+   Reset browser defaults and apply base typography
+--------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    color: var(--muted);
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(#12314a 0%, #123a52 60%, #7a8e78 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------------------
+    SITE HEADER & NAVIGATION
+--------------------------------------------------------- */
+.site-header {
+    background: var(--navy-dark);
+    padding: 14px 16px;
+    border-bottom: 1px solid rgb(255 255 255 / .08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--white);
+}
+
+/* --- Navigation links --- */
+.nav {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 6px 2px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: var(--gold);
+}
+
+/* --- Mobile menu toggle --- */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* ---------------------------------------------------------
+   SITE FOOTER
+--------------------------------------------------------- */
+.site-footer {
+    background: #0d0d0d;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    font-size: .95rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-right {
+    display: flex;
+    gap: 1rem;
+}
+
+/* --- Footer social icons --- */
+.footer-right a img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-right a:hover img {
+    transform: scale(1.15);
+    opacity: .8;
+}
+
+/* ---------------------------------------------------------
+    HERO SECTION
+--------------------------------------------------------- */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #0a2647 0%, #133b5c 40%, #1d5d9b 80%);
+}
+
+/* --- Hero background image and overlay --- */
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / .45);
+    z-index: 1;
+}
+
+/* --- Hero content text --- */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 20px;
+    animation: slideUpFade 0.8s ease both;
+}
+
+/* ---------------------------------------------------------
+    TIMELINE TABLE & EVENTS
+--------------------------------------------------------- */
+.timeline-table-section {
+    margin-top: 2rem;
+    text-align: center;
+    animation: fadeIn 0.8s ease forwards;
+    opacity: 0;
+}
+
+.timeline-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(180deg, #0d1722, #1c2a3d);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 14px rgb(0 0 0 / .4);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- Table styling --- */
+.timeline-table th,
+.timeline-table td {
+    padding: .9rem 1.2rem;
+    border-bottom: 1px solid rgb(255 255 255 / .15);
+}
+
+.timeline-table tr:nth-child(even) {
+    background: rgb(255 255 255 / .05);
+}
+
+.timeline-table tr:hover {
+    background: rgb(255 215 0 / .08);
+    transform: scale(1.01);
+    transition: all 0.25s ease;
+}
+
+/* ---------------------------------------------------------
+    CONTACT PAGE
+--------------------------------------------------------- */
+.contact-header {
+    text-align: center;
+    background: linear-gradient(90deg, var(--navy-dark), #3b6eb4);
+    padding: 30px 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 50px auto;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+/* --- Contact form --- */
+.contact-form {
+    background: linear-gradient(#0d3459, #264d79);
+    border-radius: 15px;
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / .2);
+}
+
+/* ---------------------------------------------------------
+    ABOUT PAGE
+--------------------------------------------------------- */
+.about-hero {
+    background: linear-gradient(90deg, #3f7db0 0%, #4f8bce 40%, #4b86be 100%);
+    padding: 36px 0;
+    border-bottom: 6px solid rgb(0 0 0 / .06);
+    text-align: center;
+}
+
+.card-centered {
+    max-width: 850px;
+    margin: 18px auto;
+    background: linear-gradient(180deg, rgb(10 24 40 / .9) 0%, rgb(26 46 66 / .85) 100%);
+    border-radius: 28px;
+    padding: 22px 26px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / .35);
+    text-align: center;
+}
+
+/* ---------------------------------------------------------
+    MEDIA SECTION (Video)
+--------------------------------------------------------- */
+.media-section {
+    text-align: center;
+    padding: 40px 0;
+    background: #0b1c2a;
+    color: #fff;
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / .4);
+}
+
+/* ---------------------------------------------------------
+    ANIMATIONS
+--------------------------------------------------------- */
+@keyframes slideUpFade { ... }
+@keyframes fadeInUp { ... }
+@keyframes fadeIn { ... }
+
+/* ---------------------------------------------------------
+    PRINT STYLES
+--------------------------------------------------------- */
+@media print {
+    * {
+        background: none;
+        color: #000;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    body {
+        background: #fff;
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    button, .btn, nav, footer {
+        display: none;
+    }
+
+    @page {
+        margin: 1in;
+    }
+}
