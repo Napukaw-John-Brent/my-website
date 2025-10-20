@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chronoverse — Timeline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-mobile.css" media="(max-width: 767px)">
+  <link rel="stylesheet" href="style-tablet.css" media="(min-width: 768px) and (max-width: 1024px)">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-row">
+      <div class="logo">Chronoverse</div>
+      <button class="menu-toggle">☰</button>
+      <nav class="nav" id="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="timeline.html" class="nav-link">Timeline</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="nav-overlay"></div>
+  
+  <main class="wrap">
+    <section class="timeline-page">
+      <h1 class="page-title">Explore the Timeline</h1>
+      <p class="subtitle">Select an era</p>
+
+      <div class="tabs" role="tablist" aria-label="Timeline eras">
+        <input type="radio" name="era" id="tab-1800s" checked>
+        <input type="radio" name="era" id="tab-ww">
+        <input type="radio" name="era" id="tab-1946">
+        <input type="radio" name="era" id="tab-1972">
+        <input type="radio" name="era" id="tab-2001">
+
+        <div class="tab-labels" role="presentation">
+          <label for="tab-1800s" class="tab">1800s</label>
+          <label for="tab-ww" class="tab">WWI &amp; WWII</label>
+          <label for="tab-1946" class="tab">1946</label>
+          <label for="tab-1972" class="tab">1972</label>
+          <label for="tab-2001" class="tab">2001</label>
+        </div>
+
+        <div class="card-stage" aria-live="polite">
+          <article class="panel panel-1800s" role="tabpanel" aria-labelledby="tab-1800s">
+            <div class="era-card" data-era="1800s">
+              <div class="accent"></div>
+              <div class="era-img-wrapper">
+                <img src="images/Rizal.png" alt="Portrait of José Rizal" class="era-img">
+              </div>
+              <div class="era-content">
+                <h2>1565–1898 — The Philippine Reform Movement &amp; Revolution</h2>
+                <p>Filipinos United to resist spanish rule through
+                Reform, Writings and Eventually, Revolution.
+                Sparking the Filipino’s will to be free. </p>
+                <a class="btn" href="era-1800s.html">Learn More →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel panel-ww" role="tabpanel" aria-labelledby="tab-ww">
+            <div class="era-card" data-era="wwii">
+              <div class="accent"></div>
+              <div class="era-img-wrapper">
+                <img src="images/WWII.png" alt="WWII soldiers and wartime imagery" class="era-img">
+              </div>
+              <div class="era-content">
+                <h2>1914–1945 — World War I &amp; World War II</h2>
+                <p>Two global conflicts reshaped nations 
+                    and alliances, leading to the rise and 
+                    fall of powerhouses around the world. 
+                    The Philippines, occupied by Japan
+                    during WWII, was drawn directly into 
+                    the struggle.</p>
+                <a class="btn" href="era-ww.html">Learn More →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel panel-1946" role="tabpanel" aria-labelledby="tab-1946">
+            <div class="era-card" data-era="1946">
+              <div class="accent"></div>
+              <div class="era-img-wrapper">
+                <img src="images/Republic.png" alt="Philippine Independence (1946)" class="era-img">
+              </div>
+              <div class="era-content">
+                <h2>1946 — The Birth of the Republic of the Philippines</h2>
+                <p>On July 4, 1946, the Philippines gained full 
+                    independence, becoming a free republic
+                    after centuries of colonial rule of the Spaniards
+                    and Americans.</p>
+                <a class="btn" href="era-1946.html">Learn More →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel panel-1972" role="tabpanel" aria-labelledby="tab-1972">
+            <div class="era-card" data-era="1972">
+              <div class="accent"></div>
+              <div class="era-img-wrapper">
+                <img src="images/Revolution.png" alt="Protests during the Martial Law era" class="era-img">
+              </div>
+              <div class="era-content">
+                <h2>1972 — The Martial Law Era</h2>
+                <p>Declared in 1972, The Martial Law that was declared
+                    by the late President Ferdinand Marcos Sr. reshaped 
+                    politics, civil rights, and governance in the 
+                    Philippines for over a decade.</p>
+                <a class="btn" href="era-1972.html">Learn More →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel panel-2001" role="tabpanel" aria-labelledby="tab-2001">
+            <div class="era-card" data-era="2001">
+              <div class="accent"></div>
+              <div class="era-img-wrapper">
+                <img src="images/September11.png" alt="September 11 attacks" class="era-img">
+              </div>
+              <div class="era-content">
+                <h2>2001 — The 9/11 Attacks</h2>
+                <p>On September 11, 2001, terrorist attacks 
+                struck the United States, bringing down 
+                the Twin Towers in New York City.  The event 
+                reshaped global politics, security, and the war
+                on terror, with impacts felt across the world, 
+                including the Philippines.</p>
+                <a class="btn" href="era-2001.html">Learn More →</a>
+              </div>
+            </div>
+          </article>
+        </div> 
+      </div>
+    </section>
+  </main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-left">© 2025 John Brent Napukaw. All rights reserved.</div>
+    <div class="footer-right">
+      <a href="https://www.facebook.com/christructure" target="_blank" aria-label="Facebook">
+        <img src="images/facebook-icon.png" alt="Facebook logo">
+      </a>
+      <a href="https://www.instagram.com/christructure" target="_blank" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram logo">
+      </a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

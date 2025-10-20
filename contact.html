@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Chronoverse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-mobile.css" media="(max-width: 767px)">
+  <link rel="stylesheet" href="style-tablet.css" media="(min-width: 768px) and (max-width: 1024px)">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-row">
+      <div class="logo">Chronoverse</div>
+      <button class="menu-toggle" type="button" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="timeline.html" class="nav-link">Timeline</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div id="nav-overlay" class="nav-overlay"></div>
+
+  <main class="contact-section">
+    <section class="contact-header">
+      <h1>Contact Us!</h1>
+      <p>We’d love to hear from you</p>
+    </section>
+
+    <div class="contact-container">
+      <div class="contact-form">
+        <h2>Send a Message here</h2>
+        <form>
+          <input type="text" placeholder="Name: eg.Juan Dela Cruz....." required />
+          <input type="email" placeholder="Email: eg. JDelaCruz@gmail.com...." required />
+          <textarea placeholder="Message..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h2>Other ways to Reach Us:</h2>
+        <div class="contact-icons">
+          <div class="icon-box">
+            <div class="circle gmail">G</div>
+            <p>Gmail</p>
+          </div>
+          <div class="icon-box">
+            <div class="circle github">GH</div>
+            <p>GitHub</p>
+          </div>
+          <div class="icon-box">
+            <div class="circle linkedin">in</div>
+            <p>LinkedIn</p>
+          </div>
+        </div>
+        <div class="contact-details">
+          <p>Gmail: johnbrentnapukaw@gmail.com</p>
+          <p>GitHub: johnbrentnapukaw@github.com</p>
+          <p>LinkedIn: johnbrentnapukaw@linkedin.com</p>
+          <p>📞 Phone: <a href="tel:+639123456789" class="phone-link">+63 991 972 4710</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-left">© 2025 John Brent Napukaw. All rights reserved.</div>
+    <div class="footer-right">
+      <a href="https://www.facebook.com/christructure" target="_blank" aria-label="Facebook">
+        <img src="images/facebook-icon.png" alt="Facebook logo">
+      </a>
+      <a href="https://www.instagram.com/christructure" target="_blank" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram logo">
+      </a>
+    </div>
+  </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
